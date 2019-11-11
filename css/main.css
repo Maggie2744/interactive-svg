@@ -1,6 +1,10 @@
-.left-ear {}
+.ears {
+  transition: all .5s linear;
+}
 
-.right-ear {}
+.ears:hover {
+  transform: translate(0, -10px);
+}
 
 .face {}
 
