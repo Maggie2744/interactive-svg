@@ -1,15 +1,27 @@
+#bear:hover .ears {
+  transform: translate(0, -10px);
+}
+
 .ears {
   transition: all .5s linear;
 }
 
-.ears:hover {
-  transform: translate(0, -10px);
+@keyframes move {
+
+  0% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translate(-10px);
+  }
+
 }
 
-.face {}
-
-.nose {}
-
-.left-eye {}
-
-.right-eye {}
+.eyes {
+  animation: move 3s linear infinite;
+}
